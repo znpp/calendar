@@ -1,3 +1,14 @@
 div.hasDatepicker {
     margin: 0;
+    max-width: 100%;
+}
+
+.ui-datepicker-inline {
+    width: 100% !important;
+}
+
+.ui-datepicker-group {
+    width: 50%;
+    /*min-width: 295px;*/
+    display: inline-table;
 }
