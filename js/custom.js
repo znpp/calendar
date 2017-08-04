@@ -1,20 +1,23 @@
 $(function () {
-    var dateField = $('#date');
-    dateField.val($.datepicker.formatDate(dateField.data('date-format'), new Date()));
+    var baseDate = new Date('2000');
+    var shifts = ['h1', 'w1', 'w2', 'h2'];
+    var header = $('[data-role="header"]');
+    var footer = $('[data-role="footer"]');
+    var field = $('[data-role="date"]');
 
-    $('div[data-role="footer"]').click(function () {
-        // document.body.requestFullscreen();
-        // window.scrollTo(0, 100);
-        window.scrollTo(0, 0);
-        // $('div[data-role="header"] h1').text('exec: 7_' + Math.random());
-        $('div[data-role="header"] h1').text(window.scrollY);
+    field.val($.datepicker.formatDate(field.data('date-format'), new Date()));
+
+    field.change(function () {
+        var selectedDate = $(this).date('getDate');
+        var days = Math.round(Math.abs(baseDate - selectedDate) / 8.64e7);
+        var shiftNum = days % 4;
+        var str = "Days: " + days + "\nShift: " + shifts[shiftNum];
+
+        header.children().text(str);
+        console.log(str);
     });
 
-    $(window).on("load", function () {
-        // Set a timeout...
-        setTimeout(function () {
-            // Hide the address bar!
-            window.scrollTo(0, 1);
-        }, 100);
+    footer.click(function () {
+        header.children().text('tmp');
     });
 });

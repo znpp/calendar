@@ -1,0 +1,17 @@
+CACHE MANIFEST
+
+# Version: 1.01
+
+CACHE:
+css/images/ajax-loader.gif
+
+css/jquery.mobile-1.4.5.min.css
+css/jquery.mobile.datepicker.css
+css/jquery.mobile.datepicker.theme.css
+css/custom.css
+
+js/jquery-1.11.1.min.js
+js/jquery-ui-datepicker.min.js
+js/jquery.mobile-1.4.5.min.js
+js/jquery.mobile.datepicker.js
+js/custom.js
