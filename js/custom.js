@@ -8,10 +8,16 @@ $(function () {
     field.val($.datepicker.formatDate(field.data('date-format'), new Date()));
 
     field.change(function () {
-        var selectedDate = $(this).date('getDate');
-        var days = Math.round(Math.abs(baseDate - selectedDate) / 8.64e7);
+        var curDate = $(this).date('getDate');
+        var dayOfMonth = curDate.getDate();
+        var daysInMonth = $.datepicker._getDaysInMonth(curDate.getFullYear(), curDate.getMonth());
+        var days = Math.round(Math.abs(baseDate - curDate) / 8.64e7);
         var shiftNum = days % 4;
-        var str = "Days: " + days + "\nShift: " + shifts[shiftNum];
+        var str = "" +
+            "Days: " + days + "\n" +
+            "Shift: " + shifts[shiftNum] + "\n" +
+            "curDay: " + dayOfMonth + "\n" +
+            "daysInM: " + daysInMonth;
 
         header.children().text(str);
         console.log(str);
