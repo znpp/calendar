@@ -1,14 +1,23 @@
-/*div.hasDatepicker {*/
-    /*margin: 0;*/
-    /*max-width: 100%;*/
-/*}*/
+.container > div,
+.container .day {
+    float: left;
+}
 
-/*.ui-datepicker-inline {*/
-    /*width: 100% !important;*/
-/*}*/
+.container .shifts > div,
+.container .day > div {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border: 1px solid darkseagreen;
+}
 
-/*.ui-datepicker-group {*/
-    /*width: 50%;*/
-    /*!*min-width: 295px;*!*/
-    /*display: inline-table;*/
-/*}*/
+.container .shifts > div {
+    width: 40px;
+    font-weight: bold;
+}
+
+.container .day .num {
+    font-size: 9px;
+    line-height: 20px;
+    text-align: center;
+}
