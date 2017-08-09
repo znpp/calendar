@@ -29,13 +29,13 @@
 }
 
 .container .days {
-    width: calc(100% - 42px); /*minus shift labels width*/
+    width: calc(100% - 41px); /*minus shift labels width*/
     height: 110px;
     overflow-x: auto;
     overflow-y: hidden;
 }
 
 .container .days > .scroller {
-    width: calc(22px * 31); /*cell width * months count*/
+    width: calc(21px * 31); /*cell width * months count*/
     height: 110px;
 }
