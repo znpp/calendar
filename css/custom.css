@@ -1,3 +1,8 @@
+.ui-header > div {
+    display: inline-block;
+    margin-left: 1em;
+}
+
 .container > div,
 .container .day {
     float: left;
@@ -8,7 +13,8 @@
     width: 20px;
     height: 20px;
     text-align: center;
-    border: 1px solid darkseagreen;
+    border-right: 1px solid darkseagreen;
+    border-bottom: 1px solid darkseagreen;
 }
 
 .container .shifts > div {
@@ -20,4 +26,16 @@
     font-size: 9px;
     line-height: 20px;
     text-align: center;
+}
+
+.container .days {
+    width: calc(100% - 42px); /*minus shift labels width*/
+    height: 110px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.container .days > .scroller {
+    width: calc(22px * 31); /*cell width * months count*/
+    height: 110px;
 }

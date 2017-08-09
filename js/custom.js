@@ -5,6 +5,12 @@ $(function () {
     var footer = $('[data-role="footer"]');
     var field = $('[data-role="date"]');
 
+    $('body').on('touchmove', function (e) {
+        if (!$(e.target).parents('.days').length) {
+            e.preventDefault();
+        }
+    });
+
     field.val($.datepicker.formatDate(field.data('date-format'), new Date()));
 
     field.change(function () {
@@ -14,16 +20,18 @@ $(function () {
         var days = Math.round(Math.abs(baseDate - curDate) / 8.64e7);
         var shiftNum = days % 4;
         var str = "" +
-            "Days: " + days + "\n" +
-            "Shift: " + shifts[shiftNum] + "\n" +
-            "curDay: " + dayOfMonth + "\n" +
+            "Days: " + days + " <br>\n" +
+            "Shift: " + shifts[shiftNum] + " <br>\n" +
+            "curDay: " + dayOfMonth + " <br>\n" +
             "daysInM: " + daysInMonth;
 
-        header.children().text(str);
+        $('.console').html(str);
         console.log(str);
     });
 
     footer.click(function () {
-        header.children().text('tmp');
+        var str = 'tmp';
+        $('.console').html(str);
+        console.log(str);
     });
 });
