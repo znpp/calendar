@@ -59,3 +59,7 @@
     font-size: 9px;
     line-height: 20px;
 }
+
+.container .day.selected {
+    background-color: lightgreen;
+}
