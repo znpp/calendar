@@ -3,6 +3,7 @@ $(function () {
     var $field = $('[data-role="date"]');
     var $daysContainer = $('.days');
     var $days = $daysContainer.find('.day');
+    var $daysToHide = $days.filter('.hide');
 
     $('body').on('touchmove', function (e) {
         if (!$(e.target).parents('.days').length) {
@@ -14,27 +15,26 @@ $(function () {
 
     $field.change(function () {
         var curDate = $(this).date('getDate');
-        var dayOfMonth = curDate.getDate() - 1;
+        var curDay = curDate.getDate() - 1;
         var daysInMonth = $.datepicker._getDaysInMonth(curDate.getFullYear(), curDate.getMonth());
-        var days = Math.round(Math.abs(baseDate - curDate) / 8.64e7) - dayOfMonth;
-        var shiftNum = days % 4;
-        var $day = $days.slice(shiftNum).eq(dayOfMonth);
+        var shiftNum = (Math.round(Math.abs(baseDate - curDate) / 8.64e7) - curDay) % 4;
+        var $realDays = $days.slice(shiftNum, shiftNum + daysInMonth);
+        var $day = $realDays.eq(curDay);
 
         //clear previous values
-        $days.show();
+        $daysToHide.hide();
         $days.removeClass('selected');
 
         //set new values
-        $days.not($days.slice(shiftNum, shiftNum + daysInMonth)).hide();
+        $realDays.show();
         $day.addClass('selected');
         $daysContainer.animate({
             scrollLeft: $day.offset().left - $daysContainer.offset().left + $daysContainer.scrollLeft()
         }, 1000);
 
         $('.console').html("" +
-            "Days: " + days + " <br>\n" +
             "Shift: " + shiftNum + " <br>\n" +
-            "curDay: " + dayOfMonth + " <br>\n" +
+            "curDay: " + curDay + " <br>\n" +
             "daysInM: " + daysInMonth);
     });
 

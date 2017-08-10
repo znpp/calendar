@@ -63,3 +63,7 @@
 .container .day.selected {
     background-color: lightgreen;
 }
+
+.container .day.hide {
+    display: none;
+}
