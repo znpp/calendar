@@ -3,6 +3,8 @@ CACHE MANIFEST
 # Version: 1.01
 
 CACHE:
+favicon.ico
+
 css/images/ajax-loader.gif
 
 css/jquery.mobile-1.4.5.min.css
