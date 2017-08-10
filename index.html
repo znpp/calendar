@@ -26,237 +26,247 @@
     <body>
         <div data-role="page">
             <div data-role="header">
-                <div class="label">Date:</div>
-                <input data-role="date" data-date-format="dd.mm.yy" readonly>
+                <div>Date:</div>
+                <input readonly
+                       data-role="date"
+                       data-date-format="dd.mm.yy"
+                       data-first-day="1"
+                       data-show-button-panel="true"
+                       data-change-year="true"
+                       data-show-anim="slideDown">
             </div>
 
             <div role="main" class="ui-content">
                 <div class="container">
-                    <div class="shifts">
-                        <div class="label">&nbsp</div>
-                        <div>А</div>
-                        <div>Б</div>
-                        <div>В</div>
-                        <div>Г</div>
+                    <div class="shifts float">
+                        <div class="cell">&nbsp</div>
+                        <div class="cell">А</div>
+                        <div class="cell">Б</div>
+                        <div class="cell">В</div>
+                        <div class="cell">Г</div>
                     </div>
-                    <div class="days">
+                    <div class="days float">
                         <div class="scroller">
-                            <div class="day">
-                                <div class="num">1</div>
-                                <div></div>
-                                <div></div>
-                                <div>2</div>
-                                <div>1</div>
+                            <div class="headers">
+                                <div  class="cell float">1</div>
+                                <div  class="cell float">2</div>
+                                <div  class="cell float">3</div>
+                                <div  class="cell float">4</div>
+                                <div  class="cell float">5</div>
+                                <div  class="cell float">6</div>
+                                <div  class="cell float">7</div>
+                                <div  class="cell float">8</div>
+                                <div  class="cell float">9</div>
+                                <div  class="cell float">10</div>
+                                <div  class="cell float">11</div>
+                                <div  class="cell float">12</div>
+                                <div  class="cell float">13</div>
+                                <div  class="cell float">14</div>
+                                <div  class="cell float">15</div>
+                                <div  class="cell float">16</div>
+                                <div  class="cell float">17</div>
+                                <div  class="cell float">18</div>
+                                <div  class="cell float">19</div>
+                                <div  class="cell float">20</div>
+                                <div  class="cell float">21</div>
+                                <div  class="cell float">22</div>
+                                <div  class="cell float">23</div>
+                                <div  class="cell float">24</div>
+                                <div  class="cell float">25</div>
+                                <div  class="cell float">26</div>
+                                <div  class="cell float">27</div>
+                                <div  class="cell float">28</div>
+                                <div  class="cell float">29</div>
+                                <div  class="cell float">30</div>
+                                <div  class="cell float">31</div>
                             </div>
-                            <div class="day">
-                                <div class="num">2</div>
-                                <div>1</div>
-                                <div></div>
-                                <div></div>
-                                <div>2</div>
-                            </div>
-                            <div class="day">
-                                <div class="num">3</div>
-                                <div>2</div>
-                                <div>1</div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <div class="day">
-                                <div class="num">4</div>
-                                <div></div>
-                                <div>2</div>
-                                <div>1</div>
-                                <div></div>
-                            </div>
-                            <div class="day">
-                                <div class="num">5</div>
-                                <div></div>
-                                <div></div>
-                                <div>2</div>
-                                <div>1</div>
-                            </div>
-                            <div class="day">
-                                <div class="num">6</div>
-                                <div>1</div>
-                                <div></div>
-                                <div></div>
-                                <div>2</div>
-                            </div>
-                            <div class="day">
-                                <div class="num">7</div>
-                                <div>2</div>
-                                <div>1</div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <div class="day">
-                                <div class="num">8</div>
-                                <div></div>
-                                <div>2</div>
-                                <div>1</div>
-                                <div></div>
-                            </div>
-                            <div class="day">
-                                <div class="num">9</div>
-                                <div></div>
-                                <div></div>
-                                <div>2</div>
-                                <div>1</div>
-                            </div>
-                            <div class="day">
-                                <div class="num">10</div>
-                                <div>1</div>
-                                <div></div>
-                                <div></div>
-                                <div>2</div>
-                            </div>
-                            <div class="day">
-                                <div class="num">11</div>
-                                <div>2</div>
-                                <div>1</div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <div class="day">
-                                <div class="num">12</div>
-                                <div></div>
-                                <div>2</div>
-                                <div>1</div>
-                                <div></div>
-                            </div>
-                            <div class="day">
-                                <div class="num">13</div>
-                                <div></div>
-                                <div></div>
-                                <div>2</div>
-                                <div>1</div>
-                            </div>
-                            <div class="day">
-                                <div class="num">14</div>
-                                <div>1</div>
-                                <div></div>
-                                <div></div>
-                                <div>2</div>
-                            </div>
-                            <div class="day">
-                                <div class="num">15</div>
-                                <div>2</div>
-                                <div>1</div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <div class="day">
-                                <div class="num">16</div>
-                                <div></div>
-                                <div>2</div>
-                                <div>1</div>
-                                <div></div>
-                            </div>
-                            <div class="day">
-                                <div class="num">17</div>
-                                <div></div>
-                                <div></div>
-                                <div>2</div>
-                                <div>1</div>
-                            </div>
-                            <div class="day">
-                                <div class="num">18</div>
-                                <div>1</div>
-                                <div></div>
-                                <div></div>
-                                <div>2</div>
-                            </div>
-                            <div class="day">
-                                <div class="num">19</div>
-                                <div>2</div>
-                                <div>1</div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <div class="day">
-                                <div class="num">20</div>
-                                <div></div>
-                                <div>2</div>
-                                <div>1</div>
-                                <div></div>
-                            </div>
-                            <div class="day">
-                                <div class="num">21</div>
-                                <div></div>
-                                <div></div>
-                                <div>2</div>
-                                <div>1</div>
-                            </div>
-                            <div class="day">
-                                <div class="num">22</div>
-                                <div>1</div>
-                                <div></div>
-                                <div></div>
-                                <div>2</div>
-                            </div>
-                            <div class="day">
-                                <div class="num">23</div>
-                                <div>2</div>
-                                <div>1</div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <div class="day">
-                                <div class="num">24</div>
-                                <div></div>
-                                <div>2</div>
-                                <div>1</div>
-                                <div></div>
-                            </div>
-                            <div class="day">
-                                <div class="num">25</div>
-                                <div></div>
-                                <div></div>
-                                <div>2</div>
-                                <div>1</div>
-                            </div>
-                            <div class="day">
-                                <div class="num">26</div>
-                                <div>1</div>
-                                <div></div>
-                                <div></div>
-                                <div>2</div>
-                            </div>
-                            <div class="day">
-                                <div class="num">27</div>
-                                <div>2</div>
-                                <div>1</div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <div class="day">
-                                <div class="num">28</div>
-                                <div></div>
-                                <div>2</div>
-                                <div>1</div>
-                                <div></div>
-                            </div>
-                            <div class="day">
-                                <div class="num">29</div>
-                                <div></div>
-                                <div></div>
-                                <div>2</div>
-                                <div>1</div>
-                            </div>
-                            <div class="day">
-                                <div class="num">30</div>
-                                <div>1</div>
-                                <div></div>
-                                <div></div>
-                                <div>2</div>
-                            </div>
-                            <div class="day">
-                                <div class="num">31</div>
-                                <div>2</div>
-                                <div>1</div>
-                                <div></div>
-                                <div></div>
+                            <div class="values">
+                                <div  class="day float">
+                                    <div  class="cell"></div>
+                                    <div  class="cell"></div>
+                                    <div  class="cell">2</div>
+                                    <div  class="cell">1</div>
+                                </div>
+                                <div  class="day float">
+                                    <div  class="cell">1</div>
+                                    <div  class="cell"></div>
+                                    <div  class="cell"></div>
+                                    <div  class="cell">2</div>
+                                </div>
+                                <div  class="day float">
+                                    <div  class="cell">2</div>
+                                    <div  class="cell">1</div>
+                                    <div  class="cell"></div>
+                                    <div  class="cell"></div>
+                                </div>
+                                <div  class="day float">
+                                    <div  class="cell"></div>
+                                    <div  class="cell">2</div>
+                                    <div  class="cell">1</div>
+                                    <div  class="cell"></div>
+                                </div>
+                                <div  class="day float">
+                                    <div  class="cell"></div>
+                                    <div  class="cell"></div>
+                                    <div  class="cell">2</div>
+                                    <div  class="cell">1</div>
+                                </div>
+                                <div  class="day float">
+                                    <div  class="cell">1</div>
+                                    <div  class="cell"></div>
+                                    <div  class="cell"></div>
+                                    <div  class="cell">2</div>
+                                </div>
+                                <div  class="day float">
+                                    <div  class="cell">2</div>
+                                    <div  class="cell">1</div>
+                                    <div  class="cell"></div>
+                                    <div  class="cell"></div>
+                                </div>
+                                <div  class="day float">
+                                    <div  class="cell"></div>
+                                    <div  class="cell">2</div>
+                                    <div  class="cell">1</div>
+                                    <div  class="cell"></div>
+                                </div>
+                                <div  class="day float">
+                                    <div  class="cell"></div>
+                                    <div  class="cell"></div>
+                                    <div  class="cell">2</div>
+                                    <div  class="cell">1</div>
+                                </div>
+                                <div  class="day float">
+                                    <div  class="cell">1</div>
+                                    <div  class="cell"></div>
+                                    <div  class="cell"></div>
+                                    <div  class="cell">2</div>
+                                </div>
+                                <div  class="day float">
+                                    <div  class="cell">2</div>
+                                    <div  class="cell">1</div>
+                                    <div  class="cell"></div>
+                                    <div  class="cell"></div>
+                                </div>
+                                <div  class="day float">
+                                    <div  class="cell"></div>
+                                    <div  class="cell">2</div>
+                                    <div  class="cell">1</div>
+                                    <div  class="cell"></div>
+                                </div>
+                                <div  class="day float">
+                                    <div  class="cell"></div>
+                                    <div  class="cell"></div>
+                                    <div  class="cell">2</div>
+                                    <div  class="cell">1</div>
+                                </div>
+                                <div  class="day float">
+                                    <div  class="cell">1</div>
+                                    <div  class="cell"></div>
+                                    <div  class="cell"></div>
+                                    <div  class="cell">2</div>
+                                </div>
+                                <div  class="day float">
+                                    <div  class="cell">2</div>
+                                    <div  class="cell">1</div>
+                                    <div  class="cell"></div>
+                                    <div  class="cell"></div>
+                                </div>
+                                <div  class="day float">
+                                    <div  class="cell"></div>
+                                    <div  class="cell">2</div>
+                                    <div  class="cell">1</div>
+                                    <div  class="cell"></div>
+                                </div>
+                                <div  class="day float">
+                                    <div  class="cell"></div>
+                                    <div  class="cell"></div>
+                                    <div  class="cell">2</div>
+                                    <div  class="cell">1</div>
+                                </div>
+                                <div  class="day float">
+                                    <div  class="cell">1</div>
+                                    <div  class="cell"></div>
+                                    <div  class="cell"></div>
+                                    <div  class="cell">2</div>
+                                </div>
+                                <div  class="day float">
+                                    <div  class="cell">2</div>
+                                    <div  class="cell">1</div>
+                                    <div  class="cell"></div>
+                                    <div  class="cell"></div>
+                                </div>
+                                <div  class="day float">
+                                    <div  class="cell"></div>
+                                    <div  class="cell">2</div>
+                                    <div  class="cell">1</div>
+                                    <div  class="cell"></div>
+                                </div>
+                                <div  class="day float">
+                                    <div  class="cell"></div>
+                                    <div  class="cell"></div>
+                                    <div  class="cell">2</div>
+                                    <div  class="cell">1</div>
+                                </div>
+                                <div  class="day float">
+                                    <div  class="cell">1</div>
+                                    <div  class="cell"></div>
+                                    <div  class="cell"></div>
+                                    <div  class="cell">2</div>
+                                </div>
+                                <div  class="day float">
+                                    <div  class="cell">2</div>
+                                    <div  class="cell">1</div>
+                                    <div  class="cell"></div>
+                                    <div  class="cell"></div>
+                                </div>
+                                <div  class="day float">
+                                    <div  class="cell"></div>
+                                    <div  class="cell">2</div>
+                                    <div  class="cell">1</div>
+                                    <div  class="cell"></div>
+                                </div>
+                                <div  class="day float">
+                                    <div  class="cell"></div>
+                                    <div  class="cell"></div>
+                                    <div  class="cell">2</div>
+                                    <div  class="cell">1</div>
+                                </div>
+                                <div  class="day float">
+                                    <div  class="cell">1</div>
+                                    <div  class="cell"></div>
+                                    <div  class="cell"></div>
+                                    <div  class="cell">2</div>
+                                </div>
+                                <div  class="day float">
+                                    <div  class="cell">2</div>
+                                    <div  class="cell">1</div>
+                                    <div  class="cell"></div>
+                                    <div  class="cell"></div>
+                                </div>
+                                <div  class="day float">
+                                    <div  class="cell"></div>
+                                    <div  class="cell">2</div>
+                                    <div  class="cell">1</div>
+                                    <div  class="cell"></div>
+                                </div>
+                                <div  class="day float">
+                                    <div  class="cell"></div>
+                                    <div  class="cell"></div>
+                                    <div  class="cell">2</div>
+                                    <div  class="cell">1</div>
+                                </div>
+                                <div  class="day float">
+                                    <div  class="cell">1</div>
+                                    <div  class="cell"></div>
+                                    <div  class="cell"></div>
+                                    <div  class="cell">2</div>
+                                </div>
+                                <div  class="day float">
+                                    <div  class="cell">2</div>
+                                    <div  class="cell">1</div>
+                                    <div  class="cell"></div>
+                                    <div  class="cell"></div>
+                                </div>
                             </div>
                         </div>
                     </div>

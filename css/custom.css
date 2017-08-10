@@ -1,41 +1,61 @@
+/*other components*/
+.ui-content {
+    padding: 5px;
+}
+
 .ui-header > div {
     display: inline-block;
     margin-left: 1em;
 }
 
-.container > div,
-.container .day {
+.ui-datepicker-week-end > * {
+    color: #ff5050 !important;
+}
+
+/*main container*/
+.container .float {
     float: left;
 }
 
-.container .shifts > div,
-.container .day > div {
+.container .cell {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
     width: 20px;
     height: 20px;
+    min-width: 20px;
+    min-height: 20px;
     text-align: center;
     border-right: 1px solid darkseagreen;
     border-bottom: 1px solid darkseagreen;
 }
 
-.container .shifts > div {
+.container .shifts > .cell {
     width: 40px;
     font-weight: bold;
 }
 
-.container .day .num {
-    font-size: 9px;
-    line-height: 20px;
-    text-align: center;
-}
-
 .container .days {
     width: calc(100% - 41px); /*minus shift labels width*/
-    height: 110px;
     overflow-x: auto;
     overflow-y: hidden;
 }
 
 .container .days > .scroller {
-    width: calc(21px * 31); /*cell width * months count*/
-    height: 110px;
+    width: max-content;
+    width: -moz-max-content;
+    width: -webkit-max-content;
+    width: -o-max-content;
+    width: -ms-max-content;
+}
+
+.container .days > .scroller > div {
+    display: -ms-flexbox;
+}
+
+.container .days .headers > .cell {
+    font-size: 9px;
+    line-height: 20px;
 }
