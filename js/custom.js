@@ -2,8 +2,9 @@ $(function () {
     var baseDate = new Date(2000, 0);
     var $field = $('[data-role="date"]');
     var $daysContainer = $('.days');
+    var $dayHeaders = $daysContainer.find('.headers .cell');
     var $days = $daysContainer.find('.day');
-    var $daysToHide = $days.filter('.hide');
+    var $cellsToHide = $daysContainer.find('.hide');
 
     $('body').on('touchmove', function (e) {
         if (!$(e.target).parents('.days').length) {
@@ -22,10 +23,11 @@ $(function () {
         var $day = $realDays.eq(curDay);
 
         //clear previous values
-        $daysToHide.hide();
+        $cellsToHide.hide();
         $days.removeClass('selected');
 
         //set new values
+        $dayHeaders.slice(0, daysInMonth).show();
         $realDays.show();
         $day.addClass('selected');
         $daysContainer.animate({
