@@ -1,5 +1,5 @@
 $(function () {
-    var baseDate = new Date('2000');
+    var baseDate = new Date(2000, 0);
     var $field = $('[data-role="date"]');
     var $daysContainer = $('.days');
     var $days = $daysContainer.find('.day');
@@ -17,7 +17,7 @@ $(function () {
         var curDate = $(this).date('getDate');
         var curDay = curDate.getDate() - 1;
         var daysInMonth = $.datepicker._getDaysInMonth(curDate.getFullYear(), curDate.getMonth());
-        var shiftNum = (Math.round(Math.abs(baseDate - curDate) / 8.64e7) - curDay) % 4;
+        var shiftNum = ((Math.round((curDate - baseDate) / 8.64e7) - curDay) % 4 + 4) % 4; //'+4' for years < baseDate offset
         var $realDays = $days.slice(shiftNum, shiftNum + daysInMonth);
         var $day = $realDays.eq(curDay);
 
