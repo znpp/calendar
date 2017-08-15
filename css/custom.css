@@ -64,6 +64,10 @@
     background-color: lightgreen;
 }
 
+.container .cell.weekend {
+    color: #ff5050;
+}
+
 .container .day.hide {
     display: none;
 }
