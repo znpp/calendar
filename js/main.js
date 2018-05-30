@@ -1,6 +1,8 @@
 $(function () {
+    var todayDate = new Date();
     var baseDate = new Date(2000, 0);
     var $field = $('[data-role="date"]');
+    var $copyright = $('[data-role="footer"] .copyright');
     var $daysContainer = $('.days');
     var $dayHeaders = $daysContainer.find('.headers .cell');
     var $days = $daysContainer.find('.day');
@@ -12,7 +14,7 @@ $(function () {
         }
     });
 
-    $field.val($.datepicker.formatDate($field.data('date-format'), new Date()));
+    $field.val($.datepicker.formatDate($field.data('date-format'), todayDate));
 
     $field.change(function () {
         var curDate = $(this).date('getDate');
@@ -39,5 +41,7 @@ $(function () {
         }, 1000);
     });
 
+    //need for initial rendering
     $field.trigger('change');
+    $copyright.text($copyright.text() + todayDate.getFullYear());
 });
