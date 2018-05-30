@@ -5,7 +5,7 @@ div[data-role="footer"] {
 }
 
 div[data-role="footer"]:after {
-    content: 'v1.01';
+    content: 'v1.02';
     position: absolute;
     right: 0;
     bottom: 0;
