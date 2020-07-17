@@ -22,12 +22,21 @@ div[data-role="footer"]:after {
     margin-left: 1em;
 }
 
+.ui-header > .ui-input-text {
+    width: 150px;
+}
+
+.ui-header > a {
+    margin: .4em !important;
+}
+
 .ui-datepicker-week-end > * {
     color: #ff5050 !important;
 }
 
 /*main container*/
-.container .float {
+.container > div,
+.container .values > .day {
     float: left;
 }
 
@@ -78,6 +87,7 @@ div[data-role="footer"]:after {
     font-size: 9px;
     line-height: 20px;
     border-top: 1px solid darkseagreen;
+    float: left;
 }
 
 .container .day.selected {

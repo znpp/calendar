@@ -24,6 +24,13 @@
 
     <body>
         <div data-role="page">
+            <div data-role="panel" data-display="overlay" id="left-panel">
+                <ul>
+                    <li>Menu_1</li>
+                    <li>Menu_2</li>
+                </ul>
+            </div>
+
             <div data-role="header">
                 <div>Date:</div>
                 <input readonly
@@ -33,252 +40,256 @@
                        data-show-button-panel="true"
                        data-change-year="true"
                        data-show-anim="slideDown">
+                <a href="#left-panel"
+                   class="ui-nodisc-icon ui-alt-icon ui-btn-right ui-btn ui-icon-bars ui-btn-icon-notext"
+                   data-role="button"
+                   role="button"></a>
             </div>
 
             <div role="main" class="ui-content">
                 <div class="container">
-                    <div class="shifts float">
+                    <div class="shifts">
                         <div class="cell">&nbsp</div>
                         <div class="cell">А</div>
                         <div class="cell">Б</div>
                         <div class="cell">В</div>
                         <div class="cell">Г</div>
                     </div>
-                    <div class="days float">
+                    <div class="days">
                         <div class="scroller">
                             <div class="headers">
-                                <div class="cell float">1</div>
-                                <div class="cell float">2</div>
-                                <div class="cell float">3</div>
-                                <div class="cell float">4</div>
-                                <div class="cell float">5</div>
-                                <div class="cell float">6</div>
-                                <div class="cell float">7</div>
-                                <div class="cell float">8</div>
-                                <div class="cell float">9</div>
-                                <div class="cell float">10</div>
-                                <div class="cell float">11</div>
-                                <div class="cell float">12</div>
-                                <div class="cell float">13</div>
-                                <div class="cell float">14</div>
-                                <div class="cell float">15</div>
-                                <div class="cell float">16</div>
-                                <div class="cell float">17</div>
-                                <div class="cell float">18</div>
-                                <div class="cell float">19</div>
-                                <div class="cell float">20</div>
-                                <div class="cell float">21</div>
-                                <div class="cell float">22</div>
-                                <div class="cell float">23</div>
-                                <div class="cell float">24</div>
-                                <div class="cell float">25</div>
-                                <div class="cell float">26</div>
-                                <div class="cell float">27</div>
-                                <div class="cell float">28</div>
-                                <div class="cell float hide">29</div>
-                                <div class="cell float hide">30</div>
-                                <div class="cell float hide">31</div>
+                                <div class="cell">1</div>
+                                <div class="cell">2</div>
+                                <div class="cell">3</div>
+                                <div class="cell">4</div>
+                                <div class="cell">5</div>
+                                <div class="cell">6</div>
+                                <div class="cell">7</div>
+                                <div class="cell">8</div>
+                                <div class="cell">9</div>
+                                <div class="cell">10</div>
+                                <div class="cell">11</div>
+                                <div class="cell">12</div>
+                                <div class="cell">13</div>
+                                <div class="cell">14</div>
+                                <div class="cell">15</div>
+                                <div class="cell">16</div>
+                                <div class="cell">17</div>
+                                <div class="cell">18</div>
+                                <div class="cell">19</div>
+                                <div class="cell">20</div>
+                                <div class="cell">21</div>
+                                <div class="cell">22</div>
+                                <div class="cell">23</div>
+                                <div class="cell">24</div>
+                                <div class="cell">25</div>
+                                <div class="cell">26</div>
+                                <div class="cell">27</div>
+                                <div class="cell">28</div>
+                                <div class="cell hide">29</div>
+                                <div class="cell hide">30</div>
+                                <div class="cell hide">31</div>
                             </div>
                             <div class="values">
-                                <div class="day float hide">
+                                <div class="day hide">
                                     <div class="cell"></div>
                                     <div class="cell"></div>
                                     <div class="cell">2</div>
                                     <div class="cell">1</div>
                                 </div>
-                                <div class="day float hide">
+                                <div class="day hide">
                                     <div class="cell">1</div>
                                     <div class="cell"></div>
                                     <div class="cell"></div>
                                     <div class="cell">2</div>
                                 </div>
-                                <div class="day float hide">
+                                <div class="day hide">
                                     <div class="cell">2</div>
                                     <div class="cell">1</div>
                                     <div class="cell"></div>
                                     <div class="cell"></div>
                                 </div>
-                                <div class="day float">
+                                <div class="day">
                                     <div class="cell"></div>
                                     <div class="cell">2</div>
                                     <div class="cell">1</div>
                                     <div class="cell"></div>
                                 </div>
-                                <div class="day float">
+                                <div class="day">
                                     <div class="cell"></div>
                                     <div class="cell"></div>
                                     <div class="cell">2</div>
                                     <div class="cell">1</div>
                                 </div>
-                                <div class="day float">
+                                <div class="day">
                                     <div class="cell">1</div>
                                     <div class="cell"></div>
                                     <div class="cell"></div>
                                     <div class="cell">2</div>
                                 </div>
-                                <div class="day float">
+                                <div class="day">
                                     <div class="cell">2</div>
                                     <div class="cell">1</div>
                                     <div class="cell"></div>
                                     <div class="cell"></div>
                                 </div>
-                                <div class="day float">
+                                <div class="day">
                                     <div class="cell"></div>
                                     <div class="cell">2</div>
                                     <div class="cell">1</div>
                                     <div class="cell"></div>
                                 </div>
-                                <div class="day float">
+                                <div class="day">
                                     <div class="cell"></div>
                                     <div class="cell"></div>
                                     <div class="cell">2</div>
                                     <div class="cell">1</div>
                                 </div>
-                                <div class="day float">
+                                <div class="day">
                                     <div class="cell">1</div>
                                     <div class="cell"></div>
                                     <div class="cell"></div>
                                     <div class="cell">2</div>
                                 </div>
-                                <div class="day float">
+                                <div class="day">
                                     <div class="cell">2</div>
                                     <div class="cell">1</div>
                                     <div class="cell"></div>
                                     <div class="cell"></div>
                                 </div>
-                                <div class="day float">
+                                <div class="day">
                                     <div class="cell"></div>
                                     <div class="cell">2</div>
                                     <div class="cell">1</div>
                                     <div class="cell"></div>
                                 </div>
-                                <div class="day float">
+                                <div class="day">
                                     <div class="cell"></div>
                                     <div class="cell"></div>
                                     <div class="cell">2</div>
                                     <div class="cell">1</div>
                                 </div>
-                                <div class="day float">
+                                <div class="day">
                                     <div class="cell">1</div>
                                     <div class="cell"></div>
                                     <div class="cell"></div>
                                     <div class="cell">2</div>
                                 </div>
-                                <div class="day float">
+                                <div class="day">
                                     <div class="cell">2</div>
                                     <div class="cell">1</div>
                                     <div class="cell"></div>
                                     <div class="cell"></div>
                                 </div>
-                                <div class="day float">
+                                <div class="day">
                                     <div class="cell"></div>
                                     <div class="cell">2</div>
                                     <div class="cell">1</div>
                                     <div class="cell"></div>
                                 </div>
-                                <div class="day float">
+                                <div class="day">
                                     <div class="cell"></div>
                                     <div class="cell"></div>
                                     <div class="cell">2</div>
                                     <div class="cell">1</div>
                                 </div>
-                                <div class="day float">
+                                <div class="day">
                                     <div class="cell">1</div>
                                     <div class="cell"></div>
                                     <div class="cell"></div>
                                     <div class="cell">2</div>
                                 </div>
-                                <div class="day float">
+                                <div class="day">
                                     <div class="cell">2</div>
                                     <div class="cell">1</div>
                                     <div class="cell"></div>
                                     <div class="cell"></div>
                                 </div>
-                                <div class="day float">
+                                <div class="day">
                                     <div class="cell"></div>
                                     <div class="cell">2</div>
                                     <div class="cell">1</div>
                                     <div class="cell"></div>
                                 </div>
-                                <div class="day float">
+                                <div class="day">
                                     <div class="cell"></div>
                                     <div class="cell"></div>
                                     <div class="cell">2</div>
                                     <div class="cell">1</div>
                                 </div>
-                                <div class="day float">
+                                <div class="day">
                                     <div class="cell">1</div>
                                     <div class="cell"></div>
                                     <div class="cell"></div>
                                     <div class="cell">2</div>
                                 </div>
-                                <div class="day float">
+                                <div class="day">
                                     <div class="cell">2</div>
                                     <div class="cell">1</div>
                                     <div class="cell"></div>
                                     <div class="cell"></div>
                                 </div>
-                                <div class="day float">
+                                <div class="day">
                                     <div class="cell"></div>
                                     <div class="cell">2</div>
                                     <div class="cell">1</div>
                                     <div class="cell"></div>
                                 </div>
-                                <div class="day float">
+                                <div class="day">
                                     <div class="cell"></div>
                                     <div class="cell"></div>
                                     <div class="cell">2</div>
                                     <div class="cell">1</div>
                                 </div>
-                                <div class="day float">
+                                <div class="day">
                                     <div class="cell">1</div>
                                     <div class="cell"></div>
                                     <div class="cell"></div>
                                     <div class="cell">2</div>
                                 </div>
-                                <div class="day float">
+                                <div class="day">
                                     <div class="cell">2</div>
                                     <div class="cell">1</div>
                                     <div class="cell"></div>
                                     <div class="cell"></div>
                                 </div>
-                                <div class="day float">
+                                <div class="day">
                                     <div class="cell"></div>
                                     <div class="cell">2</div>
                                     <div class="cell">1</div>
                                     <div class="cell"></div>
                                 </div>
-                                <div class="day float hide">
+                                <div class="day hide">
                                     <div class="cell"></div>
                                     <div class="cell"></div>
                                     <div class="cell">2</div>
                                     <div class="cell">1</div>
                                 </div>
-                                <div class="day float hide">
+                                <div class="day hide">
                                     <div class="cell">1</div>
                                     <div class="cell"></div>
                                     <div class="cell"></div>
                                     <div class="cell">2</div>
                                 </div>
-                                <div class="day float hide">
+                                <div class="day hide">
                                     <div class="cell">2</div>
                                     <div class="cell">1</div>
                                     <div class="cell"></div>
                                     <div class="cell"></div>
                                 </div>
-                                <div class="day float hide">
+                                <div class="day hide">
                                     <div class="cell"></div>
                                     <div class="cell">2</div>
                                     <div class="cell">1</div>
                                     <div class="cell"></div>
                                 </div>
-                                <div class="day float hide">
+                                <div class="day hide">
                                     <div class="cell"></div>
                                     <div class="cell"></div>
                                     <div class="cell">2</div>
                                     <div class="cell">1</div>
                                 </div>
-                                <div class="day float hide">
+                                <div class="day hide">
                                     <div class="cell">1</div>
                                     <div class="cell"></div>
                                     <div class="cell"></div>
