@@ -4,6 +4,7 @@ div[data-role="panel"] .version {
 }
 
 div[data-role="panel"] pre {
+    font-size: 12px;
     margin: 5px 0 0 0;
 }
 
